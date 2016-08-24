@@ -1,1 +1,42 @@
-Message caché est : <%= content %>
+<!-- Default home page -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+  setTimeout(function sunrise () {
+    document.getElementsByClassName('header')[0].style.backgroundColor = '#118798';
+  }, 0);
+</script>
+
+
+
+<div class="header">
+  <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+    <a class="pure-menu-heading" href="#">Shhhttt...</a>
+
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item"><a href="http://latrmouh.org" class="pure-menu-link">My creator</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="splash-container">
+  <div class="splash">
+    <h1 class="splash-head">Big Bold Text</h1>
+    <p class="splash-subhead">
+      <%= content %>
+    </p>
+    <p>
+      <a href="http://purecss.io" class="pure-button pure-button-primary">Share</a>
+    </p>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="content">
+    <h2 class="content-head is-center">Made with love in Montréal</h2>
+  </div>
+
+  <div class="footer l-box is-center">
+    View the source of this layout to learn more. Made with love by the YUI Team.
+  </div>
+
+</div>

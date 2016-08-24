@@ -20,6 +20,6 @@ module.exports = {
 	models: {
     	connection: 'mongodb_dev'
 	},
-  	root_url: "http://localhost:1337/"
+  root_url: "http://localhost:1337/"
 
 };

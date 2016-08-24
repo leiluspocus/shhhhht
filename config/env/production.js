@@ -20,7 +20,7 @@ module.exports = {
   models: {
      connection: 'mongodb_prod'
   },
-  root_url: "",
+  root_url: "https://shhht.herokuapp.com/",
 
   /***************************************************************************
    * Set the port in the production environment to 80                        *
