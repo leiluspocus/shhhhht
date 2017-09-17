@@ -1,10 +1,7 @@
 <!-- Default home page -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
-<script type="text/javascript">
-setTimeout(function sunrise () {
-  document.getElementsByClassName('header')[0].style.backgroundColor = '#118798';
-}, 0);
-</script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
 
 
 
@@ -22,13 +19,13 @@ setTimeout(function sunrise () {
   <div class="splash">
     <!-- <h1 class="splash-head">Big Bold Text</h1>-->
     <form>
-      <textarea class="splash-head" onfocus="clearMe(this)">
-        Your secret message ...
+      <textarea class="splash-head" id="message" placeholder="I want to tell you">
       </textarea>
       <p>
-        <a class="pure-button pure-button-primary" onClick="">Share</a>
+        <a class="bouton" id="sharebtn">Share</a>
       </p>
     </form>
+    <p id="notification"></p>
   </div>
 </div>
 
