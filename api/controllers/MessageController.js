@@ -14,7 +14,7 @@ module.exports = {
 		Message.create({content: encoded_data, shortcode : generated_shortcode}).exec(function createCB(err,created){
 	    	return res.json({
 	    		status: 200,
-	      		url: 'http://localhost:1337/' + generated_shortcode
+	      		url: 'message/read?shortcode=' + generated_shortcode
 	    	});
 	  	});
 	} ,
@@ -39,9 +39,12 @@ module.exports = {
 			  	sails.log('Message has been deleted, if there were any.');
 			  	return res.ok();
 			});
-			return res.view('message/read', {content : MessageService.decodeData(entry.content) });
+			// return res.view('message/read', {content : MessageService.decodeData(entry.content) });
+			return res.json({
+				status: 200,
+				content : MessageService.decodeData(entry.content)
+			});
 		});
 	}
 
 };
-

@@ -7,8 +7,7 @@
       jQuery.get( "/message/create", { content: jQuery('#message').val() } )
       .done(function( data ) {
         console.log(data);
-        alert( "Data Loaded: " + JSON.stringify(data) );
-        $('#notification').html("Message accessible une fois à l'adresse : " + window.location.href + data.url);
+        $('#notification').html("Message accessible à l'adresse : " + window.location.href + data.url + ". <br /> Message détruit une fois consulté...");
       });
     });
 

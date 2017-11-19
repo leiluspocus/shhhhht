@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/* Styles custom */
+p#notification {
+    text-transform: none;
+    background-color: yellow;
+    font-weight: bold;
+}
 /*
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
