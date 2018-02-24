@@ -1,2 +1,38 @@
 <!-- Default home page -->
-<%= content %>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<div class="splash-container">
+  <div class="splash"> 
+      <section class="hero is-primary is-bold">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Send a self-destruct message
+              </h1>
+              <h2 class="subtitle">
+                by <a href="http://latrmouh.org">Laïla</a>
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section class="hero is-light">
+            <div class="hero-body">
+              <div class="">
+                <p class="title"> 
+                </p>
+                <p class="subtitle">
+                    <form>
+                        <textarea class="textarea" id="message" placeholder="I want to tell you..." rows="5"></textarea>
+                        <p class="button-container">
+                          <a class="bouton button is-primary is-outlined" id="sharebtn">Share</a>
+                        </p>
+                      </form>
+                </p>
+              </div>
+            </div>
+          </section> 
+        <section class="hero is-warning">   
+          <p>> </p> 
+          <p id="notification"></p>
+        </section>
+  </div>
+</div> 

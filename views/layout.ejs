@@ -27,17 +27,33 @@
             + Import stylesheets from other directories
             + Use a different or additional preprocessor, like SASS, SCSS or Stylus
     -->
-
-    <!--STYLES-->
-    <link rel="stylesheet" href="/styles/importer.css">
-    <link rel="stylesheet" href="/styles/marketing.css">
-    <link rel="stylesheet" href="/styles/pure-min.css">
-    <!--STYLES END-->
+    <style>
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
   </head>
 
   <body>
-    <%- body %>
 
+  <section class="section">
+      <div class="container">
+            <%- body %> 
+      </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <p>
+              <strong>Shreddy</strong> was made with <a href="http://sailsjs.org">Sails.js</a>, <a href="http://bulma.io">Bulma</a> and love by <a href="https://latrmouh.org">Laïla</a>.
+            </p>
+            <p>Licensed under <a href="https://en.wikipedia.org/wiki/Careware">Careware</a></p>
+          </div>
+        </div>
+      </footer>
 
 
     <!--

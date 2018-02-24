@@ -1,37 +1,38 @@
 <!-- Default home page -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-
-
-
-<div class="header">
-  <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-    <a class="pure-menu-heading" href="#">Shhhttt...</a>
-
-    <ul class="pure-menu-list">
-      <li class="pure-menu-item"><a href="http://latrmouh.org" class="pure-menu-link">My creator</a></li>
-    </ul>
-  </div>
-</div>
-
 <div class="splash-container">
-  <div class="splash">
-    <!-- <h1 class="splash-head">Big Bold Text</h1>-->
-    <form>
-      <textarea class="splash-head" id="message" placeholder="I want to tell you">
-      </textarea>
-      <p>
-        <a class="bouton" id="sharebtn">Share</a>
-      </p>
-    </form>
-    <p id="notification"></p>
+  <div class="splash"> 
+      <section class="hero is-primary is-bold">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                Send a self-destruct message
+              </h1>
+              <h2 class="subtitle">
+                by <a href="http://latrmouh.org">Laïla</a>
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section class="hero is-light">
+            <div class="hero-body">
+              <div class="">
+                <p class="title"> 
+                </p>
+                <p class="subtitle">
+                    <form>
+                        <textarea class="textarea" id="message" placeholder="I want to tell you..." rows="5"></textarea>
+                        <p class="button-container">
+                          <a class="bouton button is-primary is-outlined" id="sharebtn">Share</a>
+                        </p>
+                      </form>
+                </p>
+              </div>
+            </div>
+          </section> 
+        <section class="hero is-warning">   
+          <p>> </p> 
+          <p id="notification"></p>
+        </section>
   </div>
-</div>
-
-<div class="content-wrapper">
-  <div class="footer l-box is-center">
-    <a href="http://sailsjs.org">Sailsjs.org</a>  - <a href="http://purecss.io/">PureCSS</a> - Made with love by <a href="http://latrmouh.org">Laïla</a>
-  </div>
-
-</div>
+</div> 
