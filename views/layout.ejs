@@ -28,10 +28,31 @@
             + Use a different or additional preprocessor, like SASS, SCSS or Stylus
     -->
     <style>
-    .button-container {
-      text-align: center;
-      margin-top: 20px;
-    }
+      .button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      body {
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+      }
+
+      footer {
+        border-top: 3px solid #6FCCD2;
+        background-color: #96E0E7 !important;
+      }
+
+      .section-share {
+        background-color: white;
+      }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
@@ -40,7 +61,7 @@
   <body>
 
   <section class="section">
-      <div class="container">
+      <div class="container main-container">
             <%- body %> 
       </div>
     </section>

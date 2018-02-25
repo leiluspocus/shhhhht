@@ -37,13 +37,12 @@ module.exports = {
 			    	return res.negotiate(err);
 			  	}
 			  	sails.log('Message has been deleted, if there were any.');
-			  	return res.ok();
+				return res.view('message/read', {content : MessageService.decodeData(entry.content) });
 			});
-			// return res.view('message/read', {content : MessageService.decodeData(entry.content) });
-			return res.json({
+			/*return res.json({
 				status: 200,
 				content : MessageService.decodeData(entry.content)
-			});
+			});*/
 		});
 	}
 

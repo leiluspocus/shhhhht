@@ -2,28 +2,30 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <div class="splash-container">
   <div class="splash"> 
-      <section class="hero is-primary is-bold">
+      <section class="hero is-danger is-bold">
           <div class="hero-body">
             <div class="container">
               <h1 class="title">
-                Send a self-destruct message
+                You received a self-destruct secret !
               </h1>
               <h2 class="subtitle">
-                by <a href="http://latrmouh.org">Laïla</a>
+                Enjoy !
               </h2>
             </div>
           </div>
         </section>
-        <section class="hero is-light">
+        <section class="hero section-share">
             <div class="hero-body">
               <div class="">
                 <p class="title"> 
                 </p>
                 <p class="subtitle">
                     <form>
-                        <textarea class="textarea" id="message" placeholder="I want to tell you..." rows="5"></textarea>
+                        <textarea class="textarea" id="message" placeholder="I want to tell you..." rows="5" readonly>
+                            <%= content %>
+                        </textarea>
                         <p class="button-container">
-                          <a class="bouton button is-primary is-outlined" id="sharebtn">Share</a>
+                          <a class="bouton button is-danger is-outlined" href="/">Send one ?</a>
                         </p>
                       </form>
                 </p>
